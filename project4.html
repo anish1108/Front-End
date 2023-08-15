@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');">
+    <style>
+        body {
+            margin: 0px 80px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+            /* background-color: rgb(132, 195, 244); */
+        }
+
+        /* NAVIGATION BAR */
+
+        #navbar {
+            /* border: 2px dotted red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #navbar h4 {
+            /* padding: 0px 30px; */
+        }
+
+        #menubar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        #menu a:hover {
+            background-color: rgb(90, 90, 107);
+            color: white;
+        }
+
+        #menu {
+            padding: 0px 20px;
+            margin: 0px 40px;
+            text-decoration: none;
+
+        }
+
+        #menu a {
+            color: black;
+            padding: 8px;
+            text-decoration: none;
+        }
+
+        #numb:hover {
+            color: rgb(12, 185, 12);
+            cursor: pointer;
+        }
+
+        /* SECTION BAR */
+
+        #sectionbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .leftitems {
+            padding: 10px 0px;
+        }
+
+        #left p {
+            color: grey;
+        }
+
+        button {
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: rgb(90, 90, 107);
+            color: white;
+            cursor: pointer;
+        }
+
+        #right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #rightbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 200px;
+            /* border: 2px solid black; */
+            background-color: rgb(90, 90, 107);
+        }
+
+        .loader {
+            border: 4px solid white;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            border-top: 4px solid black;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* SECOND SECTION */
+
+        #section2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 50px;
+            margin: 20px 0px;
+
+        }
+
+
+        #section2 h2:hover {
+            color: rgb(100, 191, 237);
+            cursor: pointer;
+
+        }
+
+        .sectiondiv {
+            /* border: 3px dotted green; */
+        }
+
+        #sectionbox {
+            width: 350px;
+            height: 120px;
+            /* border: 2px solid red; */
+            background-color: rgb(160, 161, 172);
+        }
+
+        #foothead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #smallbox {
+            /* border: 2px dotted red; */
+            background-color: rgb(160, 161, 172);
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        #smallboxcoll {
+            display: flex;
+            /* border: 1px solid green; */
+        }
+
+        /* footer part */
+
+        #footls {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .footdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 4px dotted violet; */
+            flex-direction: column;
+            background-color: rgb(183, 185, 199);
+
+        }
+
+
+        #div01 {
+            display: flex;
+            /* grid-template-columns: 1fr 4fr; */
+            align-items: center;
+            margin: 3px 5px;
+
+        }
+
+        #footbox1 {
+            height: 80px;
+            width: 80px;
+            background-color: white;
+            /* border: 5px solid blue; */
+            margin: 0px 15px 0px 0px;
+
+        }
+
+        #lastbox{
+            width: 300px;
+            height: 300px;
+            background-color:rgb(115, 116, 120) ;
+        }
+
+        #lastbox h1{
+            background-color: black;
+            color: white;
+        }
+
+        .last{
+            height: 200px;
+            /* background-color: rgb(133, 131, 129); */
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <h4>COMPANY</h4>
+            <!-- <p style="font-size:0.6rem; margin:0px;">Lorem, ipsum dolor.</p> -->
+
+        </div>
+        <div id="menubar">
+            <div id="menu"><a href="php">Company</a></div>
+            <div id="menu"><a href="php">Our Cases</a></div>
+            <div id="menu"><a href="php">Blog</a></div>
+            <div id="menu"><a href="php">News</a></div>
+            <div id="menu"><a href="php">Contact</a></div>
+
+        </div>
+        <h4 id="numb">987368737</h4>
+    </nav>
+
+    <section id="sectionbar">
+        <div id="left">
+            <h2 class="leftitems">LANDING PAGE TEMPLATE</h2>
+            <h5 class="leftitems">JUST A TITLE</h5>
+            <p class="leftitems">hyyytf Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam rerum
+                in eveniet optio omnis, tenetur maiores dignissimos veniam, temporibus facere natus eligendi! <br> Non
+                ullam distinctio, recusandae vitae ad quidem tenetur corrupti?</p>
+            <button class="leftitems">Next</button>
+        </div>
+        <div id="right">
+            <div id="rightbox">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div id="div1" class="sectiondiv">
+            <h2>WHAT IS IT</h2>
+            <div id="sectionbox"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero porro nemo corrupti commodi minus ut
+                fuga dolorum accusantium enim, at, tempore, nulla pariatur? Ipsa perferendis ipsam sapiente. Repudiandae
+                porro delectus eius earum perspiciatis?</p>
+        </div>
+        <div id="div2" class="sectiondiv">
+            <h2>WHAT IS IT</h2>
+            <div id="sectionbox"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero porro nemo corrupti commodi minus ut
+                fuga dolorum accusantium enim, at, tempore, nulla pariatur? Ipsa perferendis ipsam sapiente. Repudiandae
+                porro delectus eius earum perspiciatis?</p>
+        </div>
+        <div id="div3" class="sectiondiv">
+            <h2>WHAT IS IT</h2>
+            <div id="sectionbox"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero porro nemo corrupti commodi minus ut
+                fuga dolorum accusantium enim, at, tempore, nulla pariatur? Ipsa perferendis ipsam sapiente. Repudiandae
+                porro delectus eius earum perspiciatis?</p>
+        </div>
+
+    </section>
+
+    <div id="foothead">
+        <div>
+            <h1>COMPANY ADVANTAGES</h1>
+        </div>
+        <div id="smallboxcoll">
+            <div id="smallbox"></div>
+            <div id="smallbox"></div>
+            <div id="smallbox"></div>
+        </div>
+    </div>
+
+    <footer id="footls">
+        <div class="footdiv" id="footdiv1">
+
+            <div class="div001" id="div01">
+                <div id="footbox1"></div>
+                <div class="headp">
+                    <h3>DO IT NOW</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div class="div001" id="div01">
+                <div id="footbox1"></div>
+                <div>
+                    <h3>DON'T DO IT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div class="div001" id="div01">
+                <div id="footbox1"></div>
+                <div>
+                    <h3>SHOULD DO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footdiv">
+            <div class="div001" id="div01">
+                <div id="footbox1"></div>
+                <div class="headp">
+                    <h3>DO IT NOW</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div class="div001" id="div01">
+                <div id="footbox1"></div>
+                <div>
+                    <h3>DON'T DO IT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div class="div001" id="div01">
+                <div id="footbox1"></div>
+                <div>
+                    <h3>SHOULD DO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footdiv">
+            <div id="lastbox">
+                <h1>WHAT TO DO NOW</h1>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="last">
+
+    </div>
+</body>
+
+</html>
